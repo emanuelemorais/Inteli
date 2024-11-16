@@ -1,0 +1,17 @@
+version: '3' #Defini versão 3 para compose
+services:
+  backend: #Cria serviço backend
+    build: 
+      context: ./backend #Sinaliza onde encontrar o dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" #Defini porta como a 8000 (tanto no container como externamente)
+
+  frontend: #Cria serviço frontend
+    build: 
+      context: ./frontend #Sinaliza onde encontrar o dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" #Defini porta como a 3000 (tanto no container como externamente)
+    depends_on:
+      - backend #Cria dependencia no backend

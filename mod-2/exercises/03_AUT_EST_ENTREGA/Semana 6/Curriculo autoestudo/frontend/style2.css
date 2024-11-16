@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+#background{
+    background-image: url(imagens/img\ capa.jpg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    
+
+    
+    
+
+    
+}
+.card{
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 1em gray;
+}
+#bemvindo{
+    border-radius: 5px;
+    color: white;
+    background-color:#563d7c;
+}
+.fonte{
+    font-family: 'Poppins', sans-serif;
+}
+.color{
+    color: #563d7c;
+}
+h2{
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+
+.txt{
+    width: 80vw;
+}
+
+
+
+.imgtxt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgtxt2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+
+}
+
+.fotopessoal{
+    width: 40vw;
+}
+footer{
+    background-color: #e2e2e2;
+    height: 20vh;
+}
+
+#formacao{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

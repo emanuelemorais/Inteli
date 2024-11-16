@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  simulation:
+    container_name: simulation
+    hostname: simulation
+    restart: always
+    env_file:
+      - ../.env
+    build:
+      context: ..
+      dockerfile: build/Dockerfile.simulation
+  app:
+    container_name: app
+    hostname: app
+    restart: always
+    env_file:
+      - ../.env
+    build:
+      context: ..
+      dockerfile: build/Dockerfile.app
+  metabase:
+    image: metabase/metabase
+    container_name: metabase-ponderada
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metabase-data:/metabase.db
+    restart: always

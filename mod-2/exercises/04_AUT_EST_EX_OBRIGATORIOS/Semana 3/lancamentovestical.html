@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="iniciar()">
+
+    <script type="text/javascript">
+        function hmax(){
+            g = 10
+            res1.value = (parseFloat(v0.value)**2) / parseFloat(2*g)}
+
+        function tempsub(){
+            res2.value = parseFloat(v0.value) / g
+        }
+
+    </script>
+
+    <h1>Calculando lançamento vertical</h1>
+    Velocidade inicial: <input type="text" id="v0" value=0> <br>
+    <input type="button" value="Altura maxima" onclick="hmax();"> <br>
+     A altura máxima atingida é: <input type="text" id="res1" value="0" readonly> <br>
+
+     <input type="button" value="Tempo de subida" onclick="tempsub();"> <br>
+     O tempo de subida foi de: <input type="text" id="res2" value="0" readonly> 
+
+    
+</body>
+</html>
